@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Student</title>
+</head>
+<body>
+   <div class="container">
+    <form>
+       <div class="head"> <h1>Student form</h1></div>
+        <label for="">name</label><br>
+        <input type="text" id="pname"><br>
+        <label for="">Age</label><br>
+        <input type="text" id="age"><br>
+        <label for="">DOB</label><br>
+        <input type="date" id="pdob"><br>
+        <label for="">Gender</label>
+        <input type="radio" id="gender" name="gender" value="male"><label for="gender">Male</label>
+        <input type="radio" id="gender" name="gender" value="female"><label for="gender">Female</label><br>
+       
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value="india">india</option>
+            <option value="usa">USA</option>
+            <option value="japan">japan</option>
+        </select><br>
+        <label for="country">State</label>
+        <select name="state" id="state">
+            <option value="tamilnadu">Tamilnadu</option>
+            <option value="kerala">kerala</option>
+            <option value="Andra">andra</option>
+        </select><br>
+        <label for="address">Address</label><br>
+        <input type="text" id="address"><br>
+        <label for="std">Standard</label>
+        <input type="text" id="std"><br>
+        <label for="">Section</label>
+        <input type="radio" id="sec" name="sec" value="A"><label for="A">A</label>
+        <input type="radio" id="sec" name="sec" value="B"><label for="B">B</label>
+        <input type="radio" id="sec" name="sec" value="C"><label for="C">C</label>
+        <input type="radio" id="sec" name="sec" value="D"><label for="D">D</label><br>
+    
+    </form>
+    <button onclick="studentdetails()">submit</button>
+    <a href="teacher.html"><button>next</button></a>
+   </div>
+   
+
+
+    <script src="form.js">
+     </script>
+</body>
+</html>
+

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Details</title>
+</head>
+<body>
+    <h2>Login Details</h2>
+    <p>Welcome, <span id="username"></span>!</p>
+
+    <script>
+        // Retrieve and display the username from the query parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const username = urlParams.get('username');
+        document.getElementById('username').textContent = username;
+    </script>
+</body>
+</html>

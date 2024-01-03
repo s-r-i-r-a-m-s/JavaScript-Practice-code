@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class person{
+            constructor(name,age,gender,dob,country,state,address){
+                this.name=name;
+                this.age=age;
+                this.gender=gender;
+                this.dob=dob;
+                this.country=country;
+                this.state=state;
+                this.address=address;
+            }
+        }
+        const details = new person("sriram",21,"male",30,"india","tamilnadu","southstreet,pandukudi.");
+        console.log(details);
+        class student extends person{
+            
+            constructor(name,age,gender,dob,country,state,address,std,sec){
+                super(name,age,gender,dob,country,state,address);
+                this.std=std;
+                this.sec=sec;
+            }
+        }
+        const studetails=new student ("sriram",21,"male",30,"india","tamilnadu","southstreet,pandukudi.",10,"c");
+        console.log(studetails);
+
+        class teacher extends person{
+            constructor(name,age,gender,dob,country,state,address,subject){
+                super(name,age,gender,dob,country,state,address)
+                this.subject=subject;
+            }
+        }
+    </script>
+</body>
+</html>

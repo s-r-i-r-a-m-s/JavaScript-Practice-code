@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    <form action="">
+        <label for="day">Enter Your Fav Day</label>
+        <select name="" id="chooseday">
+            <option value="sunday">Sunday</option>
+            <option value="Monday">Monday</option>
+            <option value="tuesday">tuesday</option>
+            <option value="wednesday">wednesday</option>
+            <option value="thursday">thursday</option>
+            <option value="friday">friday</option>
+            <option value="saturday">saturday</option>
+        </select>
+    </form>
+    <button onclick="daycheck()">check</button>
+    <script>
+        // switch(2){
+        //     case 1:console.log("case1");
+        //     break;
+        //     case 2:console.log("case2");
+        //     break;
+        // }
+        // let input = prompt("enter a week day like sunday ,monday ....etc,.");
+        // let day = input;
+        
+        function daycheck(){
+            var day = document.getElementById("chooseday").value;
+            switch(day){
+            case 'sunday':console.log("sunday is holiday");
+            break;
+            case 'monday':console.log("monday is working day");
+            break;
+            case 'tuesday':console.log("tuesday is gov holiday");
+            break;
+            case 'wednesday':console.log("wednesday is birthday");
+            break;
+            case 'thursday':console.log("thursday is common day");
+            break;
+            case 'friday':console.log("friday is for god");
+            break;
+            case 'saturday':console.log("saturday evening is heaven!");
+            break;
+        }
+        }
+        
+    </script>
+</body>
+</html>

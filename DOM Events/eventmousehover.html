@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<style>
+  .DOM{
+    background-color:#D94A38;
+    width:120px;
+    height:20px;
+    padding:40px;
+  }
+  h1:hover{
+    color: red;
+  }
+</style>
+
+
+<body>
+
+<div class="DOM" onmouseover="mOver(this)" onmouseout="mOut(this)">
+Mouse Over Me</div>
+<h1>hellow world </h1>
+<h1 id="demo"></h1>
+<script>
+  function mOut(obj) {
+  obj.innerHTML = "Mouse Over Me"
+}
+
+function mOver(obj) {
+  obj.innerHTML = "Thank You"
+  
+}
+
+var c=document.getElementById("demo")
+console.log(c)
+c.innerHTML="hellow"
+</script>
+
+</body>
+</html> 

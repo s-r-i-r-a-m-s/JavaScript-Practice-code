@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            
+        }
+        .container{
+            margin: 40px;
+            margin-left: 25%;
+            width: 45%;
+            border: 1px solid black;
+            padding: 30px;
+            background-color: rgb(0, 0, 88);
+            color: white;
+        }
+        .container label,input{
+            margin: 10px;
+            font-size: 20px;
+            padding: 10px;
+        }
+        .container label{
+            font-size: 30px;
+        }
+        .container #pname,#age,#address{
+           width: 90%;
+        }
+        .container button{
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            background-color: black;
+            color: white;
+            position: relative;
+            left: 200px;
+        }
+        .container select,option{
+            font-size: 20px;
+            margin-left: 60px;
+        }
+        button a{
+            text-decoration: none;
+            color: white;
+        }
+        .head{
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <form>
+       <div class="head"> <h1>Student form</h1></div>
+        <label for="">name</label><br>
+        <input type="text" id="pname"><br>
+        <label for="">Age</label><br>
+        <input type="text" id="age"><br>
+        <label for="">DOB</label><br>
+        <input type="date" id="pdob"><br>
+        <label for="">Gender</label>
+        <input type="radio" id="gender" name="gender" value="male"><label for="gender">Male</label>
+        <input type="radio" id="gender" name="gender" value="female"><label for="gender">Female</label><br>
+        <label for="std">Standard</label>
+        <input type="text" id="std"><br>
+        <label for="">Section</label>
+        <input type="radio" id="sec" name="sec" value="A"><label for="A">A</label>
+        <input type="radio" id="sec" name="sec" value="B"><label for="B">B</label>
+        <input type="radio" id="sec" name="sec" value="C"><label for="C">C</label>
+        <input type="radio" id="sec" name="sec" value="D"><label for="D">D</label><br>
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value="india">india</option>
+            <option value="usa">USA</option>
+            <option value="japan">japan</option>
+        </select><br>
+        <label for="country">State</label>
+        <select name="state" id="state">
+            <option value="tamilnadu">Tamilnadu</option>
+            <option value="kerala">kerala</option>
+            <option value="Andra">andra</option>
+        </select><br>
+        <label for="address">Address</label><br>
+        <input type="text" id="address">
+    
+    </form>
+    <button onclick="student()">submit</button>
+    <a href="teacher.html"><button>next</button></a>
+   </div>
+   
+
+
+    <script>
+            class person{
+                constructor(name,age,dob,gender,country,state,address){
+                    this.name=name;
+                    this.age=age;
+                    this.dob=dob;
+                    this.gender=gender;
+                    this.country=country;
+                    this.state=state;
+                    this.address=address;
+                }
+            }
+            let name = document.getElementById("pname").value;
+            let age = document.getElementById("age").value;
+            let dob = document.getElementById("pdob").value;
+            let gender =document.getElementById("gender").value;
+            let standard =document.getElementById("std").value;
+            let section =document.getElementById("sec").value;
+            let country = document.getElementById("country").value;
+            let state = document.getElementById("state").value;
+            let address = document.getElementById("address").value;
+            const details = new person(name,age,dob,gender,country,state,address);
+            console.log(details);
+         function student(){
+            class student extends person{
+                constructor(name,age,dob,gender,standard,section,country,state,address){
+                    super(name,age,dob,gender,country,state,address);
+                    this.standard=standard;
+                    this.section=section;
+
+                }
+            }
+            const details2=new student(name,age,dob,gender,standard,section,country,state,address);
+            console.log(details2);
+         }
+    </script>
+</body>
+</html>
+

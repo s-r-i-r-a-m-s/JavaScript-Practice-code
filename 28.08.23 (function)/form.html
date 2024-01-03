@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="emp"> 
+        <label for="name">Name</label>
+        <input type="text" name="fname">
+        <label for="name">DOB</label>
+        <input type="date" id="dob">
+        </form> <!--close form tag before button tag!-->
+        <button onclick="submit()">Submit</button>
+  
+    <script>
+        function submit(){
+            var empName = document.emp.fname.value;
+            var empDob = document.getElementById("dob").value;
+            console.log("employee name "+empName);
+            console.log("employee date of birth "+empDob);
+        }
+    </script>
+    <form name="gender">
+        <input type="radio" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="Female">
+        <label for="female">Female</label><br>
+        <select name="" id="country">
+            <option id="india">india</option>
+            <option id="usa">USA</option>
+        </select>
+    </form>
+    <button onclick="submit1()">submit1</button>
+    <script>
+        function submit1(){
+            var gender=document.gender.gender.value;
+            console.log("emp gender:"+gender);
+            var country=document.getElementById("country").value;
+            console.log("emp country:"+country);
+        }
+    </script>
+    
+</body>
+</html>

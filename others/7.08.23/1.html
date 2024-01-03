@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h2>JavaScript HTML DOM</h2>
+
+<p>Hello World!0</p>
+
+<p>Hello Norway!1</p>
+
+<p>Click the button to change the color of all p elements.2</p>
+
+
+<button onclick="myFunction()">clik</button>
+ 
+<script>
+
+function myFunction() {
+  const myCollection = document.getElementsByTagName("p");
+  console.log(myCollection)
+  for (let i = 0; i < myCollection.length; i++) {
+    myCollection[i].style.color = "red";
+    
+  }
+}
+</script>
+
+</body>
+</html>

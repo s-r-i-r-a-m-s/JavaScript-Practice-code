@@ -1,0 +1,81 @@
+<html>
+ <header>
+    <title>Click event</title>
+    <style>
+        .container{
+           width: 50%;
+           height: 40%;
+           border: 3px solid wheat;
+           margin:40px ;
+        }
+
+        ul li{
+
+            text-align: center;
+            text-decoration: none;
+            list-style: none;
+            border: 1px solid black;
+            margin-right:30px ;
+            background: white;
+            height: fit-content;
+
+          
+        }
+        body{
+            background: darkblue;
+
+        }
+        h1{
+            color: white;
+            text-align: center;
+            background:red ;
+        }
+    </style>
+ </header>
+  <body>
+    <div class="main">
+    <div class="container">
+        <h1 id="main-heading" >
+            List of ball Games
+        </h1>
+       <ul>
+        <li class="list-items">Football</li>
+        <li class="list-items" >volleyball</li>
+        <li class="list-items" >baskectball</li>
+
+       </ul> 
+       <button id="myBtn">Event EventListener </button>
+       <div class="testing">Testing</div>
+
+
+    </div>
+
+</div>
+<form name="emp">
+    <label>Colorvalue</label>
+    <input name="use">
+   </form>
+   <button onclick="colorchange()">colorchange</button>
+   <h1>hellow</h1>
+<script>
+
+    const title =document.getElementById('main-heading') ;
+    const list =document.getElementsByTagName('li');
+    const listitems =document.getElementsByClassName('testing');
+    console.log(list);
+    console.log(title);
+    console.log(listitems);
+    title.style.color="purple"
+    function colorchange(){
+      var color=document.emp.use.value
+ 
+       document.body.style.background=color;
+     
+    }
+
+
+
+</script>
+  </body>
+
+</html>

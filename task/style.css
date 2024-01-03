@@ -1,0 +1,74 @@
+
+.container{
+    background: rgb(0,0,0);
+background: linear-gradient(4deg, rgba(0,0,0,1) 42%, rgb(3, 23, 74) 89%);
+    width: 50%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+}
+.con-form{
+    background-color: rgb(27, 27, 31);
+    width: 80%;
+    padding: 40px;
+    color: white;
+    border-radius: 10px;
+}
+.con-form input{
+    background-color: #2b2d31;
+    color: white;
+    border: none;
+}
+.con-form label{
+    font-weight: bold;
+}
+.con-form .form-check-label{
+    font-weight: normal;
+}
+
+.con-form select {
+    background-color: #2b2d31;
+    color: white;
+}
+.con-form input::-webkit-input-placeholder{
+    color: white;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    background-color: black;
+    color: white;
+    
+}
+.back{
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.btn button{
+    margin: 10px;
+    border: none;
+    background-color:#0032b4;
+    font-size: 20px;
+    width: 100px;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.btn button:hover{
+   
+    background-color: white;
+    color: rgb(1, 1, 89) ;
+}
